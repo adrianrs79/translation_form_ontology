@@ -1,0 +1,4048 @@
+@prefix : <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/user/ontologies/2020/0/material_problem> .
+
+<http://www.semanticweb.org/user/ontologies/2020/0/material_problem> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#ACCOMMODATION_AND_FOOD_SERVICE_ACTIVITIES
+:ACCOMMODATION_AND_FOOD_SERVICE_ACTIVITIES rdf:type owl:Class ;
+                                           rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES
+:ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES rdf:type owl:Class ;
+                                               rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#AGRICULTURE_FORESTRY_AND_FISHING
+:AGRICULTURE_FORESTRY_AND_FISHING rdf:type owl:Class ;
+                                  rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#ARTS_ENTERTAINMENT_AND_RECREATION
+:ARTS_ENTERTAINMENT_AND_RECREATION rdf:type owl:Class ;
+                                   rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Absorbance
+:Absorbance rdf:type owl:Class ;
+            rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Accommodation
+:Accommodation rdf:type owl:Class ;
+               rdfs:subClassOf :ACCOMMODATION_AND_FOOD_SERVICE_ACTIVITIES ;
+               owl:disjointWith :Food_and_beverage_service_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Activities_auxiliary_to_financial_services_and_insurance_activities
+:Activities_auxiliary_to_financial_services_and_insurance_activities rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :FINANCIAL_AND_INSURANCE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Activities_of_head_offices_management_consultancy_activities
+:Activities_of_head_offices_management_consultancy_activities rdf:type owl:Class ;
+                                                              rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Activities_of_membership_organisations
+:Activities_of_membership_organisations rdf:type owl:Class ;
+                                        rdfs:subClassOf :OTHER_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#AdditiveManufacturing
+:AdditiveManufacturing rdf:type owl:Class ;
+                       rdfs:subClassOf :Primary_shaping .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Advertising_and_market_research
+:Advertising_and_market_research rdf:type owl:Class ;
+                                 rdfs:subClassOf :Scientific_research_and_development .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Air_transport
+:Air_transport rdf:type owl:Class ;
+               rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Al-based
+:Al-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Aluminium_production
+:Aluminium_production rdf:type owl:Class ;
+                      rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Amorph
+:Amorph rdf:type owl:Class ;
+        rdfs:subClassOf :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Architectural_activities
+:Architectural_activities rdf:type owl:Class ;
+                          rdfs:subClassOf :Architectural_and_engineering_activities_technical_testing_and_analysis ;
+                          owl:disjointWith :Architectural_and_engineering_activities_and_related_technical_consultancy .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Architectural_and_engineering_activities_and_related_technical_consultancy
+:Architectural_and_engineering_activities_and_related_technical_consultancy rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :Architectural_and_engineering_activities_technical_testing_and_analysis .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Architectural_and_engineering_activities_technical_testing_and_analysis
+:Architectural_and_engineering_activities_technical_testing_and_analysis rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Atomic_mass
+:Atomic_mass rdf:type owl:Class ;
+             rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Atomic_number
+:Atomic_number rdf:type owl:Class ;
+               rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Atomic_weight
+:Atomic_weight rdf:type owl:Class ;
+               rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Atomistic
+:Atomistic rdf:type owl:Class ;
+           rdfs:subClassOf :model .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Birefringence
+:Birefringence rdf:type owl:Class ;
+               rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Boiling_point
+:Boiling_point rdf:type owl:Class ;
+               rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Boride
+:Boride rdf:type owl:Class ;
+        rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Brazing
+:Brazing rdf:type owl:Class ;
+         rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Building_completion_and_finishing
+:Building_completion_and_finishing rdf:type owl:Class ;
+                                   rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Building_of_ships_and_boats
+:Building_of_ships_and_boats rdf:type owl:Class ;
+                             rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Bulk_modulus
+:Bulk_modulus rdf:type owl:Class ;
+              rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#CONSTRUCTION
+:CONSTRUCTION rdf:type owl:Class ;
+              rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Capabilities
+:Capabilities rdf:type owl:Class ;
+              rdfs:subClassOf :Problem_owner ;
+              rdfs:comment "Field for the modelling capabilities of the problem owner. May be useful to expand to experimental charachterisation/testing in future?" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Capacitance
+:Capacitance rdf:type owl:Class ;
+             rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Carbide
+:Carbide rdf:type owl:Class ;
+         rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting
+:Casting rdf:type owl:Class ;
+         rdfs:subClassOf :Primary_shaping .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting_of_iron
+:Casting_of_iron rdf:type owl:Class ;
+                 rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting_of_light_metals
+:Casting_of_light_metals rdf:type owl:Class ;
+                         rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting_of_metals
+:Casting_of_metals rdf:type owl:Class ;
+                   rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting_of_other_non-ferrous_metals
+:Casting_of_other_non-ferrous_metals rdf:type owl:Class ;
+                                     rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Casting_of_steel
+:Casting_of_steel rdf:type owl:Class ;
+                  rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Ceramic_for_high_temperature_applications
+:Ceramic_for_high_temperature_applications rdf:type owl:Class ;
+                                           rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Chemical_properties
+:Chemical_properties rdf:type owl:Class ;
+                     rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Civil_engineering
+:Civil_engineering rdf:type owl:Class ;
+                   rdfs:subClassOf :CONSTRUCTION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cloud_computing
+:Cloud_computing rdf:type owl:Class ;
+                 rdfs:subClassOf :Preferences ;
+                 rdfs:comment "to be used as simple yes/no preference in PO-translator matching app." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Coating
+:Coating rdf:type owl:Class ;
+         rdfs:subClassOf :Manufacturing_Process .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Coefficient_of_restitution
+:Coefficient_of_restitution rdf:type owl:Class ;
+                            rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Coefficient_of_thermal_expansion
+:Coefficient_of_thermal_expansion rdf:type owl:Class ;
+                                  rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cold_drawing_of_bars
+:Cold_drawing_of_bars rdf:type owl:Class ;
+                      rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cold_drawing_of_wire
+:Cold_drawing_of_wire rdf:type owl:Class ;
+                      rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cold_forming_or_folding
+:Cold_forming_or_folding rdf:type owl:Class ;
+                         rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cold_rolling_of_narrow_strip
+:Cold_rolling_of_narrow_strip rdf:type owl:Class ;
+                              rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Collection_of_hazardous_waste
+:Collection_of_hazardous_waste rdf:type owl:Class ;
+                               rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Collection_of_non-hazardous_waste
+:Collection_of_non-hazardous_waste rdf:type owl:Class ;
+                                   rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Colour
+:Colour rdf:type owl:Class ;
+        rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Composites
+:Composites rdf:type owl:Class ;
+            rdfs:subClassOf :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Compressive_strength
+:Compressive_strength rdf:type owl:Class ;
+                      rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Compulsory_social_security_activities
+:Compulsory_social_security_activities rdf:type owl:Class ;
+                                       rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Computer_programming_consultancy_and_related_activities
+:Computer_programming_consultancy_and_related_activities rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Computer_programming_consultancy_and_related_activities ,
+                                                                         :Programming_and_broadcasting_activities ;
+                                                         owl:disjointWith :Telecommunications .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_bridges_and_tunnels
+:Construction_of_bridges_and_tunnels rdf:type owl:Class ;
+                                     rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_other_civil_engineering_projects
+:Construction_of_other_civil_engineering_projects rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_other_civil_engineering_projects_nec
+:Construction_of_other_civil_engineering_projects_nec rdf:type owl:Class ;
+                                                      rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_railways_and_underground_railways
+:Construction_of_railways_and_underground_railways rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_residential_and_non-residential_buildings
+:Construction_of_residential_and_non-residential_buildings rdf:type owl:Class ;
+                                                           rdfs:subClassOf :CONSTRUCTION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_roads_and_motorways
+:Construction_of_roads_and_motorways rdf:type owl:Class ;
+                                     rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_roads_and_railways
+:Construction_of_roads_and_railways rdf:type owl:Class ;
+                                    rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_utility_projects
+:Construction_of_utility_projects rdf:type owl:Class ;
+                                  rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_utility_projects_for_electricity_and_telecommunications
+:Construction_of_utility_projects_for_electricity_and_telecommunications rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_utility_projects_for_fluids
+:Construction_of_utility_projects_for_fluids rdf:type owl:Class ;
+                                             rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Construction_of_water_projects
+:Construction_of_water_projects rdf:type owl:Class ;
+                                rdfs:subClassOf :Civil_engineering .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Consultancy
+:Consultancy rdf:type owl:Class ;
+             rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Continuum
+:Continuum rdf:type owl:Class ;
+           rdfs:subClassOf :model .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Continuum_damage_mechanics
+:Continuum_damage_mechanics rdf:type owl:Class ;
+                            rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Copper_production
+:Copper_production rdf:type owl:Class ;
+                   rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Corrosion_resistance
+:Corrosion_resistance rdf:type owl:Class ;
+                      rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Creative_arts_and_entertainment_activities
+:Creative_arts_and_entertainment_activities rdf:type owl:Class ;
+                                            rdfs:subClassOf :ARTS_ENTERTAINMENT_AND_RECREATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Creep
+:Creep rdf:type owl:Class ;
+       rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Critical_temperature
+:Critical_temperature rdf:type owl:Class ;
+                      rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Crop_and_animal_production_hunting_and_related_service_activities
+:Crop_and_animal_production_hunting_and_related_service_activities rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :AGRICULTURE_FORESTRY_AND_FISHING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Crystal
+:Crystal rdf:type owl:Class ;
+         rdfs:subClassOf :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#CrystalGrowth
+:CrystalGrowth rdf:type owl:Class ;
+               rdfs:subClassOf :Primary_shaping .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cu-based
+:Cu-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Curie_point
+:Curie_point rdf:type owl:Class ;
+             rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Curie_temperature
+:Curie_temperature rdf:type owl:Class ;
+                   rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cutting
+:Cutting rdf:type owl:Class ;
+         rdfs:subClassOf :Machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Cutting_shaping_and_finishing_of_stone
+:Cutting_shaping_and_finishing_of_stone rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Defence_activities
+:Defence_activities rdf:type owl:Class ;
+                    rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Demolition
+:Demolition rdf:type owl:Class ;
+            rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Demolition_and_site_preparation
+:Demolition_and_site_preparation rdf:type owl:Class ;
+                                 rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Development_of_building_projects
+:Development_of_building_projects rdf:type owl:Class ;
+                                  rdfs:subClassOf :CONSTRUCTION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Diamagnetism
+:Diamagnetism rdf:type owl:Class ;
+              rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Dielectric_constant
+:Dielectric_constant rdf:type owl:Class ;
+                     rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Dielectric_strength
+:Dielectric_strength rdf:type owl:Class ;
+                     rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Dismantling_of_wrecks
+:Dismantling_of_wrecks rdf:type owl:Class ;
+                       rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Dispersions
+:Dispersions rdf:type owl:Class ;
+             rdfs:subClassOf :Liquid ;
+             owl:disjointWith :Emulsions .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Distribution_of_electricity
+:Distribution_of_electricity rdf:type owl:Class ;
+                             rdfs:subClassOf :Electric_power_generation_transmission_and_distribution .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Distribution_of_gaseous_fuels_through_mains
+:Distribution_of_gaseous_fuels_through_mains rdf:type owl:Class ;
+                                             rdfs:subClassOf :Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Drilling
+:Drilling rdf:type owl:Class ;
+          rdfs:subClassOf :Machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Ductility
+:Ductility rdf:type owl:Class ;
+           rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Durability
+:Durability rdf:type owl:Class ;
+            rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#EDUCATION
+:EDUCATION rdf:type owl:Class ;
+           rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY
+:ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Elasticity
+:Elasticity rdf:type owl:Class ;
+            rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electric_power_generation_transmission_and_distribution
+:Electric_power_generation_transmission_and_distribution rdf:type owl:Class ;
+                                                         rdfs:subClassOf :ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electric_susceptibility
+:Electric_susceptibility rdf:type owl:Class ;
+                         rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrical_installation
+:Electrical_installation rdf:type owl:Class ;
+                         rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrical_plumbing_and_other_construction_installation_activities
+:Electrical_plumbing_and_other_construction_installation_activities rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrical_properties
+:Electrical_properties rdf:type owl:Class ;
+                       rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrical_resistivity_and_conductivity
+:Electrical_resistivity_and_conductivity rdf:type owl:Class ;
+                                         rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electro-optic_effect
+:Electro-optic_effect rdf:type owl:Class ;
+                      rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrocaloric_coefficient
+:Electrocaloric_coefficient rdf:type owl:Class ;
+                            rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electromagnetic_models
+:Electromagnetic_models rdf:type owl:Class ;
+                        rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electromagnetic_radiation
+:Electromagnetic_radiation rdf:type owl:Class ;
+                           rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electronic
+:Electronic rdf:type owl:Class ;
+            rdfs:subClassOf :model .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Electrostriction
+:Electrostriction rdf:type owl:Class ;
+                  rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Emissivity
+:Emissivity rdf:type owl:Class ;
+            rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Employment_activities
+:Employment_activities rdf:type owl:Class ;
+                       rdfs:subClassOf :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Emulsions
+:Emulsions rdf:type owl:Class ;
+           rdfs:subClassOf :Liquid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Engineering_activities_and_related_technical_consultancy
+:Engineering_activities_and_related_technical_consultancy rdf:type owl:Class ;
+                                                          rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Eutectic_point
+:Eutectic_point rdf:type owl:Class ;
+                rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Existing
+:Existing rdf:type owl:Class ;
+          rdfs:subClassOf :Type ;
+          owl:disjointWith :New .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Extraction_of_crude_petroleum
+:Extraction_of_crude_petroleum rdf:type owl:Class ;
+                               rdfs:subClassOf :Extraction_of_crude_petroleum_and_natural_gas ;
+                               owl:disjointWith :Extraction_of_natural_gas .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Extraction_of_crude_petroleum_and_natural_gas
+:Extraction_of_crude_petroleum_and_natural_gas rdf:type owl:Class ;
+                                               rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Extraction_of_natural_gas
+:Extraction_of_natural_gas rdf:type owl:Class ;
+                           rdfs:subClassOf :Extraction_of_crude_petroleum_and_natural_gas .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#FINANCIAL_AND_INSURANCE_ACTIVITIES
+:FINANCIAL_AND_INSURANCE_ACTIVITIES rdf:type owl:Class ;
+                                    rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fatigue_limit
+:Fatigue_limit rdf:type owl:Class ;
+               rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fe-based
+:Fe-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Financial_service_activities_except_insurance_and_pension_funding
+:Financial_service_activities_except_insurance_and_pension_funding rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :FINANCIAL_AND_INSURANCE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fire_service_activities
+:Fire_service_activities rdf:type owl:Class ;
+                         rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fishing_and_aquaculture
+:Fishing_and_aquaculture rdf:type owl:Class ;
+                         rdfs:subClassOf :AGRICULTURE_FORESTRY_AND_FISHING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Flammability
+:Flammability rdf:type owl:Class ;
+              rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Flash_point
+:Flash_point rdf:type owl:Class ;
+             rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Flexibility
+:Flexibility rdf:type owl:Class ;
+             rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Flexural_modulus
+:Flexural_modulus rdf:type owl:Class ;
+                  rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Flexural_strength
+:Flexural_strength rdf:type owl:Class ;
+                   rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Floor_and_wall_covering
+:Floor_and_wall_covering rdf:type owl:Class ;
+                         rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fluid
+:Fluid rdf:type owl:Class ;
+       rdfs:subClassOf :Material ;
+       owl:disjointWith :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fluid_flow
+:Fluid_flow rdf:type owl:Class ;
+            rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Food_and_beverage_service_activities
+:Food_and_beverage_service_activities rdf:type owl:Class ;
+                                      rdfs:subClassOf :ACCOMMODATION_AND_FOOD_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Foreign_affairs
+:Foreign_affairs rdf:type owl:Class ;
+                 rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Forestry_and_logging
+:Forestry_and_logging rdf:type owl:Class ;
+                      rdfs:subClassOf :AGRICULTURE_FORESTRY_AND_FISHING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Forging
+:Forging rdf:type owl:Class ;
+         rdfs:subClassOf :Forming ;
+         owl:disjointWith :Rolling .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Forging_pressing_stamping_and_roll-forming_of_metal_powder_metallurgy
+:Forging_pressing_stamping_and_roll-forming_of_metal_powder_metallurgy rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Forming
+:Forming rdf:type owl:Class ;
+         rdfs:subClassOf :Manufacturing_Process .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Fracture_toughness
+:Fracture_toughness rdf:type owl:Class ;
+                    rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Freight_air_transport
+:Freight_air_transport rdf:type owl:Class ;
+                       rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Freight_rail_transport
+:Freight_rail_transport rdf:type owl:Class ;
+                        rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Freight_transport_by_road_and_removal_services
+:Freight_transport_by_road_and_removal_services rdf:type owl:Class ;
+                                                rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Friction_coefficient
+:Friction_coefficient rdf:type owl:Class ;
+                      rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Functional_ceramic
+:Functional_ceramic rdf:type owl:Class ;
+                    rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Gambling_and_betting_activities
+:Gambling_and_betting_activities rdf:type owl:Class ;
+                                 rdfs:subClassOf :ARTS_ENTERTAINMENT_AND_RECREATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Gas
+:Gas rdf:type owl:Class ;
+     rdfs:subClassOf :Fluid ;
+     owl:disjointWith :Liquid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#General_public_administration_activities
+:General_public_administration_activities rdf:type owl:Class ;
+                                          rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Glass
+:Glass rdf:type owl:Class ;
+       rdfs:subClassOf :Amorph .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Glass_transition_temperature
+:Glass_transition_temperature rdf:type owl:Class ;
+                              rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Gluing
+:Gluing rdf:type owl:Class ;
+        rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES
+:HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES rdf:type owl:Class ;
+                                         rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Half_life
+:Half_life rdf:type owl:Class ;
+           rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Hall_coefficient
+:Hall_coefficient rdf:type owl:Class ;
+                  rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Hardness
+:Hardness rdf:type owl:Class ;
+          rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Heat_of_vaporization
+:Heat_of_vaporization rdf:type owl:Class ;
+                      rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Heat_treatment
+:Heat_treatment rdf:type owl:Class ;
+                rdfs:subClassOf :Thermal_treatment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Higher_education
+:Higher_education rdf:type owl:Class ;
+                  rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Hospital_activities
+:Hospital_activities rdf:type owl:Class ;
+                     rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Human_health_activities
+:Human_health_activities rdf:type owl:Class ;
+                         rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Hygroscopy
+:Hygroscopy rdf:type owl:Class ;
+            rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Hysteresis
+:Hysteresis rdf:type owl:Class ;
+            rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#INFORMATION_AND_COMMUNICATION
+:INFORMATION_AND_COMMUNICATION rdf:type owl:Class ;
+                               rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Industry_area
+:Industry_area rdf:type owl:Class ;
+               rdfs:subClassOf :Problem_owner ;
+               rdfs:comment """Industry area of the materials problem owner. Currently using a truncated version of NACE: https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC
+
+May be changed to be more material specific.""" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Information_service_activities
+:Information_service_activities rdf:type owl:Class ;
+                                rdfs:subClassOf :Computer_programming_consultancy_and_related_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Inland_freight_water_transport
+:Inland_freight_water_transport rdf:type owl:Class ;
+                                rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Inland_passenger_water_transport
+:Inland_passenger_water_transport rdf:type owl:Class ;
+                                  rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Installation_of_industrial_machinery_and_equipment
+:Installation_of_industrial_machinery_and_equipment rdf:type owl:Class ;
+                                                    rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Insurance_reinsurance_and_pension_funding_except_compulsory_social_security
+:Insurance_reinsurance_and_pension_funding_except_compulsory_social_security rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :FINANCIAL_AND_INSURANCE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Inversion_temperature
+:Inversion_temperature rdf:type owl:Class ;
+                       rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Joinery_installation
+:Joinery_installation rdf:type owl:Class ;
+                      rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Joining
+:Joining rdf:type owl:Class ;
+         rdfs:subClassOf :Manufacturing_Process .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Justice_and_judicial_activities
+:Justice_and_judicial_activities rdf:type owl:Class ;
+                                 rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Land_transport_and_transport_via_pipelines
+:Land_transport_and_transport_via_pipelines rdf:type owl:Class ;
+                                            rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Lead_zinc_and_tin_production
+:Lead_zinc_and_tin_production rdf:type owl:Class ;
+                              rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Legal_and_accounting_activities
+:Legal_and_accounting_activities rdf:type owl:Class ;
+                                 rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Libraries_archives_museums_and_other_cultural_activities
+:Libraries_archives_museums_and_other_cultural_activities rdf:type owl:Class ;
+                                                          rdfs:subClassOf :ARTS_ENTERTAINMENT_AND_RECREATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Liquid
+:Liquid rdf:type owl:Class ;
+        rdfs:subClassOf :Fluid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Luminosity
+:Luminosity rdf:type owl:Class ;
+            rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#MANUFACTURING
+:MANUFACTURING rdf:type owl:Class ;
+               rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#MINING_AND_QUARRYING
+:MINING_AND_QUARRYING rdf:type owl:Class ;
+                      rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Machining
+:Machining rdf:type owl:Class ;
+           rdfs:subClassOf :Manufacturing_Process ,
+                           :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetic_properties
+:Magnetic_properties rdf:type owl:Class ;
+                     rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetocaloric_coefficient
+:Magnetocaloric_coefficient rdf:type owl:Class ;
+                            rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetoelectric_Polarizability
+:Magnetoelectric_Polarizability rdf:type owl:Class ;
+                                rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetoresistance
+:Magnetoresistance rdf:type owl:Class ;
+                   rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetostriction
+:Magnetostriction rdf:type owl:Class ;
+                  rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Magnetothermoelectric_power
+:Magnetothermoelectric_power rdf:type owl:Class ;
+                             rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Malleability
+:Malleability rdf:type owl:Class ;
+              rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_and_processing_of_other_glass_including_technical_glassware
+:Manufacture_and_processing_of_other_glass_including_technical_glassware rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_abrasive_products_and_non-metallic_mineral_products_nec
+:Manufacture_of_abrasive_products_and_non-metallic_mineral_products_nec rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_agricultural_and_forestry_machinery
+:Manufacture_of_agricultural_and_forestry_machinery rdf:type owl:Class ;
+                                                    rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_air_and_spacecraft_and_related_machinery
+:Manufacture_of_air_and_spacecraft_and_related_machinery rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_articles_of_concrete_cement_and_plaster
+:Manufacture_of_articles_of_concrete_cement_and_plaster rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_chemicals_fertilisers_and_nitrogen_compounds_plastics_and_synthetic_rubber_in_primary_forms
+:Manufacture_of_basic_chemicals_fertilisers_and_nitrogen_compounds_plastics_and_synthetic_rubber_in_primary_forms rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_iron_and_steel_and_of_ferro-alloys
+:Manufacture_of_basic_iron_and_steel_and_of_ferro-alloys rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_metals
+:Manufacture_of_basic_metals rdf:type owl:Class ;
+                             rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_pharmaceutical_products
+:Manufacture_of_basic_pharmaceutical_products rdf:type owl:Class ;
+                                              rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_pharmaceutical_products_and_pharmaceutical_preparations
+:Manufacture_of_basic_pharmaceutical_products_and_pharmaceutical_preparations rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_basic_precious_and_other_non-ferrous_metals
+:Manufacture_of_basic_precious_and_other_non-ferrous_metals rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_batteries_and_accumulators
+:Manufacture_of_batteries_and_accumulators rdf:type owl:Class ;
+                                           rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bearings_gears_gearing_and_driving_elements
+:Manufacture_of_bearings_gears_gearing_and_driving_elements rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Manufacture_of_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_beverages
+:Manufacture_of_beverages rdf:type owl:Class ;
+                          rdfs:subClassOf :Manufacture_of_food_tobacco_and_beverages .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bicycles_and_invalid_carriages
+:Manufacture_of_bicycles_and_invalid_carriages rdf:type owl:Class ;
+                                               rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bricks_tiles_and_construction_products_in_baked_clay
+:Manufacture_of_bricks_tiles_and_construction_products_in_baked_clay rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_brooms_and_brushes
+:Manufacture_of_brooms_and_brushes rdf:type owl:Class ;
+                                   rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_builders_ware_of_plastic
+:Manufacture_of_builders_ware_of_plastic rdf:type owl:Class ;
+                                         rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_cement
+:Manufacture_of_cement rdf:type owl:Class ;
+                       rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_cement_lime_and_plaster
+:Manufacture_of_cement_lime_and_plaster rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_central_heating_radiators_and_boilers
+:Manufacture_of_central_heating_radiators_and_boilers rdf:type owl:Class ;
+                                                      rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ceramic_household_and_ornamental_articles
+:Manufacture_of_ceramic_household_and_ornamental_articles rdf:type owl:Class ;
+                                                          rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ceramic_insulators_and_insulating_fittings
+:Manufacture_of_ceramic_insulators_and_insulating_fittings rdf:type owl:Class ;
+                                                           rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ceramic_sanitary_fixtures
+:Manufacture_of_ceramic_sanitary_fixtures rdf:type owl:Class ;
+                                          rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ceramic_tiles_and_flags
+:Manufacture_of_ceramic_tiles_and_flags rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_chemicals_and_chemical_products
+:Manufacture_of_chemicals_and_chemical_products rdf:type owl:Class ;
+                                                rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_clay_building_materials
+:Manufacture_of_clay_building_materials rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_coke_and_refined_petroleum_products
+:Manufacture_of_coke_and_refined_petroleum_products rdf:type owl:Class ;
+                                                    rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_coke_oven_products
+:Manufacture_of_coke_oven_products rdf:type owl:Class ;
+                                   rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_communication_equipment
+:Manufacture_of_communication_equipment rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_computer_electronic_and_optical_products
+:Manufacture_of_computer_electronic_and_optical_products rdf:type owl:Class ;
+                                                         rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_computers_and_peripheral_equipment
+:Manufacture_of_computers_and_peripheral_equipment rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_concrete_products_for_construction_purposes
+:Manufacture_of_concrete_products_for_construction_purposes rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_consumer_electronics
+:Manufacture_of_consumer_electronics rdf:type owl:Class ;
+                                     rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_cutlery
+:Manufacture_of_cutlery rdf:type owl:Class ;
+                        rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_cutlery_tools_and_general_hardware
+:Manufacture_of_cutlery_tools_and_general_hardware rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_domestic_appliances
+:Manufacture_of_domestic_appliances rdf:type owl:Class ;
+                                    rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_doors_and_windows_of_metal
+:Manufacture_of_doors_and_windows_of_metal rdf:type owl:Class ;
+                                           rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_dyes_and_pigments
+:Manufacture_of_dyes_and_pigments rdf:type owl:Class ;
+                                  rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electric_domestic_appliances
+:Manufacture_of_electric_domestic_appliances rdf:type owl:Class ;
+                                             rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electric_lighting_equipment
+:Manufacture_of_electric_lighting_equipment rdf:type owl:Class ;
+                                            rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electric_motors_generators_and_transformers
+:Manufacture_of_electric_motors_generators_and_transformers rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electric_motors_generators_transformers_and_electricity_distribution_and_control_apparatus
+:Manufacture_of_electric_motors_generators_transformers_and_electricity_distribution_and_control_apparatus rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electrical_and_electronic_equipment_for_motor_vehicles
+:Manufacture_of_electrical_and_electronic_equipment_for_motor_vehicles rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :Manufacture_of_motor_vehicles_trailers_and_semi-trailers .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electrical_equipment
+:Manufacture_of_electrical_equipment rdf:type owl:Class ;
+                                     rdfs:subClassOf :Manufacture_of_computer_electronic_and_optical_products ;
+                                     owl:disjointWith :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electricity_distribution_and_control_apparatus
+:Manufacture_of_electricity_distribution_and_control_apparatus rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electronic_components
+:Manufacture_of_electronic_components rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_electronic_components_and_boards
+:Manufacture_of_electronic_components_and_boards rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Manufacture_of_computer_electronic_and_optical_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_engines_and_turbines_except_aircraft_vehicle_and_cycle_engines
+:Manufacture_of_engines_and_turbines_except_aircraft_vehicle_and_cycle_engines rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :Manufacture_of_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_essential_oils
+:Manufacture_of_essential_oils rdf:type owl:Class ;
+                               rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_explosives
+:Manufacture_of_explosives rdf:type owl:Class ;
+                           rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fabricated_metal_products_except_machinery_and_equipment
+:Manufacture_of_fabricated_metal_products_except_machinery_and_equipment rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fasteners_and_screw_machine_products
+:Manufacture_of_fasteners_and_screw_machine_products rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fertilisers_and_nitrogen_compounds
+:Manufacture_of_fertilisers_and_nitrogen_compounds rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fibre_cement
+:Manufacture_of_fibre_cement rdf:type owl:Class ;
+                             rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fibre_optic_cables
+:Manufacture_of_fibre_optic_cables rdf:type owl:Class ;
+                                   rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_flat_glass
+:Manufacture_of_flat_glass rdf:type owl:Class ;
+                           rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_fluid_power_equipment
+:Manufacture_of_fluid_power_equipment rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_food_products
+:Manufacture_of_food_products rdf:type owl:Class ;
+                              rdfs:subClassOf :Manufacture_of_food_tobacco_and_beverages .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_food_tobacco_and_beverages
+:Manufacture_of_food_tobacco_and_beverages rdf:type owl:Class ;
+                                           rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_furniture
+:Manufacture_of_furniture rdf:type owl:Class ;
+                          rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_games_and_toys
+:Manufacture_of_games_and_toys rdf:type owl:Class ;
+                               rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_gas
+:Manufacture_of_gas rdf:type owl:Class ;
+                    rdfs:subClassOf :Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains
+:Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains rdf:type owl:Class ;
+                                                                rdfs:subClassOf :ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_general-purpose_machinery
+:Manufacture_of_general-purpose_machinery rdf:type owl:Class ;
+                                          rdfs:subClassOf :Manufacture_of_machinery_and_equipment_nec ;
+                                          owl:disjointWith :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_glass_and_glass_products
+:Manufacture_of_glass_and_glass_products rdf:type owl:Class ;
+                                         rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_glass_fibres
+:Manufacture_of_glass_fibres rdf:type owl:Class ;
+                             rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_glues
+:Manufacture_of_glues rdf:type owl:Class ;
+                      rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_hollow_glass
+:Manufacture_of_hollow_glass rdf:type owl:Class ;
+                             rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_industrial_gases
+:Manufacture_of_industrial_gases rdf:type owl:Class ;
+                                 rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_irradiation_electromedical_and_electrotherapeutic_equipment
+:Manufacture_of_irradiation_electromedical_and_electrotherapeutic_equipment rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_jewellery_and_related_articles
+:Manufacture_of_jewellery_and_related_articles rdf:type owl:Class ;
+                                               rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_leather_and_related_products
+:Manufacture_of_leather_and_related_products rdf:type owl:Class ;
+                                             rdfs:subClassOf :Manufacture_of_textiles_wood_paper .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_lifting_and_handling_equipment
+:Manufacture_of_lifting_and_handling_equipment rdf:type owl:Class ;
+                                               rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_light_metal_packaging_
+:Manufacture_of_light_metal_packaging_ rdf:type owl:Class ;
+                                       rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_lime_and_plaster
+:Manufacture_of_lime_and_plaster rdf:type owl:Class ;
+                                 rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_loaded_electronic_boards
+:Manufacture_of_loaded_electronic_boards rdf:type owl:Class ;
+                                         rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_locks_and_hinges
+:Manufacture_of_locks_and_hinges rdf:type owl:Class ;
+                                 rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_and_equipment_nec
+:Manufacture_of_machinery_and_equipment_nec rdf:type owl:Class ;
+                                            rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_for_food_beverage_and_tobacco_processing
+:Manufacture_of_machinery_for_food_beverage_and_tobacco_processing rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :Manufacture_of_machinery_for_mining_quarrying_and_construction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_for_metallurgy
+:Manufacture_of_machinery_for_metallurgy rdf:type owl:Class ;
+                                         rdfs:subClassOf :Manufacture_of_metal_forming_machinery_and_machine_tools .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_for_mining_quarrying_and_construction
+:Manufacture_of_machinery_for_mining_quarrying_and_construction rdf:type owl:Class ;
+                                                                rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_for_paper_and_paperboard_production
+:Manufacture_of_machinery_for_paper_and_paperboard_production rdf:type owl:Class ;
+                                                              rdfs:subClassOf :Manufacture_of_machinery_for_mining_quarrying_and_construction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_machinery_for_textile_apparel_and_leather_production
+:Manufacture_of_machinery_for_textile_apparel_and_leather_production rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :Manufacture_of_machinery_for_mining_quarrying_and_construction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_magnetic_and_optical_media
+:Manufacture_of_magnetic_and_optical_media rdf:type owl:Class ;
+                                           rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_man-made_fibres
+:Manufacture_of_man-made_fibres rdf:type owl:Class ;
+                                rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_medical_and_dental_instruments_and_supplies
+:Manufacture_of_medical_and_dental_instruments_and_supplies rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_metal_forming_machinery
+:Manufacture_of_metal_forming_machinery rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_metal_forming_machinery_and_machine_tools .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_metal_forming_machinery_and_machine_tools
+:Manufacture_of_metal_forming_machinery_and_machine_tools rdf:type owl:Class ;
+                                                          rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_metal_structures_and_parts_of_structures
+:Manufacture_of_metal_structures_and_parts_of_structures rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_military_fighting_vehicles
+:Manufacture_of_military_fighting_vehicles rdf:type owl:Class ;
+                                           rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_mortars
+:Manufacture_of_mortars rdf:type owl:Class ;
+                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_motor_vehicles
+:Manufacture_of_motor_vehicles rdf:type owl:Class ;
+                               rdfs:subClassOf :Manufacture_of_motor_vehicles_trailers_and_semi-trailers .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_motor_vehicles_trailers_and_semi-trailers
+:Manufacture_of_motor_vehicles_trailers_and_semi-trailers rdf:type owl:Class ;
+                                                          rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_motorcycles
+:Manufacture_of_motorcycles rdf:type owl:Class ;
+                            rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_musical_instruments
+:Manufacture_of_musical_instruments rdf:type owl:Class ;
+                                    rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_non-domestic_cooling_and_ventilation_equipment
+:Manufacture_of_non-domestic_cooling_and_ventilation_equipment rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_non-electric_domestic_appliances
+:Manufacture_of_non-electric_domestic_appliances rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_optical_instruments_and_photographic_equipment
+:Manufacture_of_optical_instruments_and_photographic_equipment rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_articles_of_concrete_plaster_and_cement
+:Manufacture_of_other_articles_of_concrete_plaster_and_cement rdf:type owl:Class ;
+                                                              rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_ceramic_products
+:Manufacture_of_other_ceramic_products rdf:type owl:Class ;
+                                       rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_chemical_products
+:Manufacture_of_other_chemical_products rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_chemical_products_nec
+:Manufacture_of_other_chemical_products_nec rdf:type owl:Class ;
+                                            rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_electrical_equipment
+:Manufacture_of_other_electrical_equipment rdf:type owl:Class ;
+                                           rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_electronic_and_electric_wires_and_cables
+:Manufacture_of_other_electronic_and_electric_wires_and_cables rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_fabricated_metal_products
+:Manufacture_of_other_fabricated_metal_products rdf:type owl:Class ;
+                                                rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_fabricated_metal_products_nec
+:Manufacture_of_other_fabricated_metal_products_nec rdf:type owl:Class ;
+                                                    rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_general-purpose_machinery
+:Manufacture_of_other_general-purpose_machinery rdf:type owl:Class ;
+                                                rdfs:subClassOf :Manufacture_of_machinery_and_equipment_nec .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_general-purpose_machinery_nec
+:Manufacture_of_other_general-purpose_machinery_nec rdf:type owl:Class ;
+                                                    rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_inorganic_basic_chemicals
+:Manufacture_of_other_inorganic_basic_chemicals rdf:type owl:Class ;
+                                                rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_machine_tools
+:Manufacture_of_other_machine_tools rdf:type owl:Class ;
+                                    rdfs:subClassOf :Manufacture_of_metal_forming_machinery_and_machine_tools .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_non-metallic_mineral_products
+:Manufacture_of_other_non-metallic_mineral_products rdf:type owl:Class ;
+                                                    rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_non-metallic_mineral_products_nec
+:Manufacture_of_other_non-metallic_mineral_products_nec rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_organic_basic_chemicals
+:Manufacture_of_other_organic_basic_chemicals rdf:type owl:Class ;
+                                              rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_parts_and_accessories_for_motor_vehicles
+:Manufacture_of_other_parts_and_accessories_for_motor_vehicles rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_motor_vehicles_trailers_and_semi-trailers .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_plastic_products
+:Manufacture_of_other_plastic_products rdf:type owl:Class ;
+                                       rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_porcelain_and_ceramic_products
+:Manufacture_of_other_porcelain_and_ceramic_products rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_products_of_first_processing_of_steel
+:Manufacture_of_other_products_of_first_processing_of_steel rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_pumps_and_compressors
+:Manufacture_of_other_pumps_and_compressors rdf:type owl:Class ;
+                                            rdfs:subClassOf :Manufacture_of_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_rubber_products
+:Manufacture_of_other_rubber_products rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_special-purpose_machinery
+:Manufacture_of_other_special-purpose_machinery rdf:type owl:Class ;
+                                                rdfs:subClassOf :Manufacture_of_metal_forming_machinery_and_machine_tools .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_special-purpose_machinery_nec
+:Manufacture_of_other_special-purpose_machinery_nec rdf:type owl:Class ;
+                                                    rdfs:subClassOf :Manufacture_of_machinery_for_mining_quarrying_and_construction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_tanks_reservoirs_and_containers_of_metal
+:Manufacture_of_other_tanks_reservoirs_and_containers_of_metal rdf:type owl:Class ;
+                                                               rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_taps_and_valves
+:Manufacture_of_other_taps_and_valves rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_technical_ceramic_products
+:Manufacture_of_other_technical_ceramic_products rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_transport_equipment
+:Manufacture_of_other_transport_equipment rdf:type owl:Class ;
+                                          rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_other_transport_equipment_nec
+:Manufacture_of_other_transport_equipment_nec rdf:type owl:Class ;
+                                              rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ovens_furnaces_and_furnace_burners
+:Manufacture_of_ovens_furnaces_and_furnace_burners rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_paints_varnishes_and_similar_coatings_printing_ink_and_mastics
+:Manufacture_of_paints_varnishes_and_similar_coatings_printing_ink_and_mastics rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_paper_and_paper_products
+:Manufacture_of_paper_and_paper_products rdf:type owl:Class ;
+                                         rdfs:subClassOf :Manufacture_of_textiles_wood_paper .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_parts_and_accessories_for_motor_vehicles
+:Manufacture_of_parts_and_accessories_for_motor_vehicles rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Manufacture_of_motor_vehicles_trailers_and_semi-trailers .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_perfumes_and_toilet_preparations
+:Manufacture_of_perfumes_and_toilet_preparations rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_pesticides_and_other_agrochemical_products
+:Manufacture_of_pesticides_and_other_agrochemical_products rdf:type owl:Class ;
+                                                           rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_pharmaceutical_preparations
+:Manufacture_of_pharmaceutical_preparations rdf:type owl:Class ;
+                                            rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plaster_products_for_construction_purposes
+:Manufacture_of_plaster_products_for_construction_purposes rdf:type owl:Class ;
+                                                           rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plastic_packing_goods
+:Manufacture_of_plastic_packing_goods rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plastic_plates_sheets_tubes_and_profiles
+:Manufacture_of_plastic_plates_sheets_tubes_and_profiles rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plastic_products
+:Manufacture_of_plastic_products rdf:type owl:Class ;
+                                 rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plastics_and_rubber_machinery
+:Manufacture_of_plastics_and_rubber_machinery rdf:type owl:Class ;
+                                              rdfs:subClassOf :Manufacture_of_machinery_for_mining_quarrying_and_construction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_plastics_in_primary_forms
+:Manufacture_of_plastics_in_primary_forms rdf:type owl:Class ;
+                                          rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_power-driven_hand_tools
+:Manufacture_of_power-driven_hand_tools rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_railway_locomotives_and_rolling_stock
+:Manufacture_of_railway_locomotives_and_rolling_stock rdf:type owl:Class ;
+                                                      rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_ready-mixed_concrete
+:Manufacture_of_ready-mixed_concrete rdf:type owl:Class ;
+                                     rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_refined_petroleum_products
+:Manufacture_of_refined_petroleum_products rdf:type owl:Class ;
+                                           rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_refractory_products
+:Manufacture_of_refractory_products rdf:type owl:Class ;
+                                    rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_rubber_and_plastic_products
+:Manufacture_of_rubber_and_plastic_products rdf:type owl:Class ;
+                                            rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_rubber_products
+:Manufacture_of_rubber_products rdf:type owl:Class ;
+                                rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_rubber_tyres_and_tubes
+:Manufacture_of_rubber_tyres_and_tubes rdf:type owl:Class ;
+                                       rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_soap_and_detergents_cleaning_and_polishing_preparations_perfumes_and_toilet_preparations
+:Manufacture_of_soap_and_detergents_cleaning_and_polishing_preparations_perfumes_and_toilet_preparations rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_sports_goods
+:Manufacture_of_sports_goods rdf:type owl:Class ;
+                             rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_steam_generators_except_central_heating_hot_water_boilers
+:Manufacture_of_steam_generators_except_central_heating_hot_water_boilers rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_steel_drums_and_similar_containers
+:Manufacture_of_steel_drums_and_similar_containers rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_structural_metal_products
+:Manufacture_of_structural_metal_products rdf:type owl:Class ;
+                                          rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_synthetic_rubber_in_primary_forms
+:Manufacture_of_synthetic_rubber_in_primary_forms rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Manufacture_of_coke_and_refined_petroleum_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_tanks_reservoirs_and_containers_of_metal
+:Manufacture_of_tanks_reservoirs_and_containers_of_metal rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_textiles
+:Manufacture_of_textiles rdf:type owl:Class ;
+                         rdfs:subClassOf :Manufacture_of_textiles_wood_paper .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_textiles_wood_paper
+:Manufacture_of_textiles_wood_paper rdf:type owl:Class ;
+                                    rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_tobacco_products
+:Manufacture_of_tobacco_products rdf:type owl:Class ;
+                                 rdfs:subClassOf :Manufacture_of_food_tobacco_and_beverages .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_tools
+:Manufacture_of_tools rdf:type owl:Class ;
+                      rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_transport_equipment_nec
+:Manufacture_of_transport_equipment_nec rdf:type owl:Class ;
+                                        rdfs:subClassOf :Building_of_ships_and_boats .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_tubes_pipes_hollow_profiles_and_related_fittings_of_steel
+:Manufacture_of_tubes_pipes_hollow_profiles_and_related_fittings_of_steel rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_watches_and_clocks
+:Manufacture_of_watches_and_clocks rdf:type owl:Class ;
+                                   rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_weapons_and_ammunition
+:Manufacture_of_weapons_and_ammunition rdf:type owl:Class ;
+                                       rdfs:subClassOf :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_wearing_apparel
+:Manufacture_of_wearing_apparel rdf:type owl:Class ;
+                                rdfs:subClassOf :Manufacture_of_textiles_wood_paper .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_wire_products_chain_and_springs
+:Manufacture_of_wire_products_chain_and_springs rdf:type owl:Class ;
+                                                rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_wiring_and_wiring_devices
+:Manufacture_of_wiring_and_wiring_devices rdf:type owl:Class ;
+                                          rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_wiring_devices
+:Manufacture_of_wiring_devices rdf:type owl:Class ;
+                               rdfs:subClassOf :Manufacture_of_electrical_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_wood_and_of_products_of_wood_and_cork_except_furniture
+:Manufacture_of_wood_and_of_products_of_wood_and_cork_except_furniture rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :Manufacture_of_textiles_wood_paper .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacturing
+:Manufacturing rdf:type owl:Class ;
+               rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacturing_Process
+:Manufacturing_Process rdf:type owl:Class ;
+                       rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacturing_nec
+:Manufacturing_nec rdf:type owl:Class ;
+                   rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mass_diffusivity
+:Mass_diffusivity rdf:type owl:Class ;
+                  rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf :Product ;
+          rdfs:comment "Presently equivilent to EVMPO_ACCESS ontology" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Material_problem
+:Material_problem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Material_property
+:Material_property rdf:type owl:Class ;
+                   rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Materials_characterisation
+:Materials_characterisation rdf:type owl:Class ;
+                            rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Materials_end_user
+:Materials_end_user rdf:type owl:Class ;
+                    rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Materials_recovery
+:Materials_recovery rdf:type owl:Class ;
+                    rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Materials_supplier
+:Materials_supplier rdf:type owl:Class ;
+                    rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mechanical_properties
+:Mechanical_properties rdf:type owl:Class ;
+                       rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Medical_and_dental_practice_activities
+:Medical_and_dental_practice_activities rdf:type owl:Class ;
+                                        rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Melting_point
+:Melting_point rdf:type owl:Class ;
+               rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mesoscopic
+:Mesoscopic rdf:type owl:Class ;
+            rdfs:subClassOf :model .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mg-based
+:Mg-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_and_quarrying_nec
+:Mining_and_quarrying_nec rdf:type owl:Class ;
+                          rdfs:subClassOf :Other_mining_and_quarrying .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_chemical_and_fertiliser_minerals
+:Mining_of_chemical_and_fertiliser_minerals rdf:type owl:Class ;
+                                            rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_clays_and_kaolin
+:Mining_of_clays_and_kaolin rdf:type owl:Class ;
+                            rdfs:subClassOf :Other_mining_and_quarrying .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_coal_and_lignite
+:Mining_of_coal_and_lignite rdf:type owl:Class ;
+                            rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_hard_coal
+:Mining_of_hard_coal rdf:type owl:Class ;
+                     rdfs:subClassOf :Mining_of_coal_and_lignite ;
+                     owl:disjointWith :Mining_of_lignite .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_iron_ores
+:Mining_of_iron_ores rdf:type owl:Class ;
+                     rdfs:subClassOf :Mining_of_metal_ores .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_lignite
+:Mining_of_lignite rdf:type owl:Class ;
+                   rdfs:subClassOf :Mining_of_coal_and_lignite .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_metal_ores
+:Mining_of_metal_ores rdf:type owl:Class ;
+                      rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_non-ferrous_metal_ores
+:Mining_of_non-ferrous_metal_ores rdf:type owl:Class ;
+                                  rdfs:subClassOf :Mining_of_metal_ores .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_other_non-ferrous_metal_ores
+:Mining_of_other_non-ferrous_metal_ores rdf:type owl:Class ;
+                                        rdfs:subClassOf :Mining_of_metal_ores .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_of_uranium_and_thorium_ores
+:Mining_of_uranium_and_thorium_ores rdf:type owl:Class ;
+                                    rdfs:subClassOf :Mining_of_metal_ores .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mining_support_service_activities
+:Mining_support_service_activities rdf:type owl:Class ;
+                                   rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Mn-based
+:Mn-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Modelling_experience
+:Modelling_experience rdf:type owl:Class ;
+                      rdfs:subClassOf :Capabilities ;
+                      owl:disjointWith :Software_access ;
+                      rdfs:comment "Currently taken from the EVMPO_ACCESS ontology. Needs to be updated to include subcatagories for atomistic, electronic and mesoscopic" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Motion_picture_video_and_television_programme_production_sound_recording_and_music_publishing_activities
+:Motion_picture_video_and_television_programme_production_sound_recording_and_music_publishing_activities rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf :INFORMATION_AND_COMMUNICATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Multiphase-fluid-flow
+:Multiphase-fluid-flow rdf:type owl:Class ;
+                       rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#NDA_type
+:NDA_type rdf:type owl:Class ;
+          rdfs:subClassOf :Preferences .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Neutron_cross-section
+:Neutron_cross-section rdf:type owl:Class ;
+                       rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#New
+:New rdf:type owl:Class ;
+     rdfs:subClassOf :Type .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Ni-based
+:Ni-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Nitride
+:Nitride rdf:type owl:Class ;
+         rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Nuclear_properties
+:Nuclear_properties rdf:type owl:Class ;
+                    rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#OTHER_SERVICE_ACTIVITIES
+:OTHER_SERVICE_ACTIVITIES rdf:type owl:Class ;
+                          rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Office_administrative_office_support_and_other_business_support_activities
+:Office_administrative_office_support_and_other_business_support_activities rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Optical_activity
+:Optical_activity rdf:type owl:Class ;
+                  rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Optical_properties
+:Optical_properties rdf:type owl:Class ;
+                    rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other
+:Other rdf:type owl:Class ;
+       rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_building_completion_and_finishing
+:Other_building_completion_and_finishing rdf:type owl:Class ;
+                                         rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_construction_installation
+:Other_construction_installation rdf:type owl:Class ;
+                                 rdfs:subClassOf :CONSTRUCTION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_education
+:Other_education rdf:type owl:Class ;
+                 rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_human_health_activities
+:Other_human_health_activities rdf:type owl:Class ;
+                               rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_information_service_activities
+:Other_information_service_activities rdf:type owl:Class ;
+                                      rdfs:subClassOf :Computer_programming_consultancy_and_related_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_manufacturing
+:Other_manufacturing rdf:type owl:Class ;
+                     rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_manufacturing_nec_
+:Other_manufacturing_nec_ rdf:type owl:Class ;
+                          rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_mining_and_quarrying
+:Other_mining_and_quarrying rdf:type owl:Class ;
+                            rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_mining_and_quarrying_nec
+:Other_mining_and_quarrying_nec rdf:type owl:Class ;
+                                rdfs:subClassOf :MINING_AND_QUARRYING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_non-ferrous_metal_production
+:Other_non-ferrous_metal_production rdf:type owl:Class ;
+                                    rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_passenger_land_transport_
+:Other_passenger_land_transport_ rdf:type owl:Class ;
+                                 rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_personal_service_activities
+:Other_personal_service_activities rdf:type owl:Class ;
+                                   rdfs:subClassOf :OTHER_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_postal_and_courier_activities
+:Other_postal_and_courier_activities rdf:type owl:Class ;
+                                     rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_professional_scientific_and_technical_activities
+:Other_professional_scientific_and_technical_activities rdf:type owl:Class ;
+                                                        rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_professional_scientific_and_technical_activities_nec
+:Other_professional_scientific_and_technical_activities_nec rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Other_professional_scientific_and_technical_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_research_and_experimental_development_on_natural_sciences_and_engineering
+:Other_research_and_experimental_development_on_natural_sciences_and_engineering rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf :Scientific_research_and_development .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_specialised_construction_activities
+:Other_specialised_construction_activities rdf:type owl:Class ;
+                                           rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_specialised_construction_activities_nec
+:Other_specialised_construction_activities_nec rdf:type owl:Class ;
+                                               rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_telecommunications_activities
+:Other_telecommunications_activities rdf:type owl:Class ;
+                                     rdfs:subClassOf :Telecommunications .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Other_transportation_support_activities_
+:Other_transportation_support_activities_ rdf:type owl:Class ;
+                                          rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Others
+:Others rdf:type owl:Class ;
+        rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Oxide
+:Oxide rdf:type owl:Class ;
+       rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES
+:PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#PUBLIC_ADMINISTRATION_AND_DEFENCE
+:PUBLIC_ADMINISTRATION_AND_DEFENCE rdf:type owl:Class ;
+                                   rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Painting_and_glazing
+:Painting_and_glazing rdf:type owl:Class ;
+                      rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Passenger_air_transport
+:Passenger_air_transport rdf:type owl:Class ;
+                         rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Passenger_rail_transport_interurban
+:Passenger_rail_transport_interurban rdf:type owl:Class ;
+                                     rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Permeability
+:Permeability rdf:type owl:Class ;
+              rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Permittivity
+:Permittivity rdf:type owl:Class ;
+              rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Phase-field-crystal
+:Phase-field-crystal rdf:type owl:Class ;
+                     rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Phase-field_multi
+:Phase-field_multi rdf:type owl:Class ;
+                   rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Photoelasticity
+:Photoelasticity rdf:type owl:Class ;
+                 rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Photographic_activities
+:Photographic_activities rdf:type owl:Class ;
+                         rdfs:subClassOf :Other_professional_scientific_and_technical_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Photosensitivity
+:Photosensitivity rdf:type owl:Class ;
+                  rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Piezoelectric_constants
+:Piezoelectric_constants rdf:type owl:Class ;
+                         rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Piezomagnetism
+:Piezomagnetism rdf:type owl:Class ;
+                rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Plastering
+:Plastering rdf:type owl:Class ;
+            rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Plasticity
+:Plasticity rdf:type owl:Class ;
+            rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Plumbing_heat_and_air-conditioning_installation
+:Plumbing_heat_and_air-conditioning_installation rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Poissons_ratio
+:Poissons_ratio rdf:type owl:Class ;
+                rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Polymerization
+:Polymerization rdf:type owl:Class ;
+                rdfs:subClassOf :Primary_shaping .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Post-secondary_non-tertiary_education
+:Post-secondary_non-tertiary_education rdf:type owl:Class ;
+                                       rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Postal_activities_under_universal_service_obligation
+:Postal_activities_under_universal_service_obligation rdf:type owl:Class ;
+                                                      rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Postal_and_courier_activities
+:Postal_and_courier_activities rdf:type owl:Class ;
+                               rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Pre-primary_education
+:Pre-primary_education rdf:type owl:Class ;
+                       rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Precious_metals_production
+:Precious_metals_production rdf:type owl:Class ;
+                            rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Preferences
+:Preferences rdf:type owl:Class ;
+             rdfs:subClassOf :Problem_owner .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Primary_education
+:Primary_education rdf:type owl:Class ;
+                   rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Primary_shaping
+:Primary_shaping rdf:type owl:Class ;
+                 rdfs:subClassOf :Manufacturing_Process .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Printing_and_reproduction_of_recorded_media
+:Printing_and_reproduction_of_recorded_media rdf:type owl:Class ;
+                                             rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Problem_owner
+:Problem_owner rdf:type owl:Class ;
+               rdfs:subClassOf :Material_problem ;
+               rdfs:comment "Information/details of the problem owner. Should be associated with registered marketplace user." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Processing_of_nuclear_fuel_
+:Processing_of_nuclear_fuel_ rdf:type owl:Class ;
+                             rdfs:subClassOf :Manufacture_of_basic_metals .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :Material_problem .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Product_design
+:Product_design rdf:type owl:Class ;
+                rdfs:subClassOf :Section_activity .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Production_of_abrasive_products
+:Production_of_abrasive_products rdf:type owl:Class ;
+                                 rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Production_of_electricity
+:Production_of_electricity rdf:type owl:Class ;
+                           rdfs:subClassOf :Electric_power_generation_transmission_and_distribution .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Programming_and_broadcasting_activities
+:Programming_and_broadcasting_activities rdf:type owl:Class ;
+                                         rdfs:subClassOf :INFORMATION_AND_COMMUNICATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Properties_of_liquids_and_slurries
+:Properties_of_liquids_and_slurries rdf:type owl:Class ;
+                                    rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Provision_of_services_to_the_community_as_a_whole
+:Provision_of_services_to_the_community_as_a_whole rdf:type owl:Class ;
+                                                   rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Public_order_and_safety_activities
+:Public_order_and_safety_activities rdf:type owl:Class ;
+                                    rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Publishing_activities
+:Publishing_activities rdf:type owl:Class ;
+                       rdfs:subClassOf :INFORMATION_AND_COMMUNICATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Publishing_of_books_periodicals_and_other_publishing_activities
+:Publishing_of_books_periodicals_and_other_publishing_activities rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :Publishing_activities ;
+                                                                 owl:disjointWith :Software_publishing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Pyroelectricity
+:Pyroelectricity rdf:type owl:Class ;
+                 rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Pyromagnetic_coefficient
+:Pyromagnetic_coefficient rdf:type owl:Class ;
+                          rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Quarrying_of_stone_sand_and_clay
+:Quarrying_of_stone_sand_and_clay rdf:type owl:Class ;
+                                  rdfs:subClassOf :Other_mining_and_quarrying .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#REAL_ESTATE_ACTIVITIES
+:REAL_ESTATE_ACTIVITIES rdf:type owl:Class ;
+                        rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Reaction-diffusion_equation
+:Reaction-diffusion_equation rdf:type owl:Class ;
+                             rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Reactivity
+:Reactivity rdf:type owl:Class ;
+            rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Recovery_of_sorted_materials
+:Recovery_of_sorted_materials rdf:type owl:Class ;
+                              rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Reflectivity
+:Reflectivity rdf:type owl:Class ;
+              rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Refractive_index
+:Refractive_index rdf:type owl:Class ;
+                  rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Regulation_of_and_contribution_to_more_efficient_operation_of_businesses
+:Regulation_of_and_contribution_to_more_efficient_operation_of_businesses rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Regulation_of_the_activities_of_providing_health_care_education_cultural_services_and_other_social_services_excluding_social_security
+:Regulation_of_the_activities_of_providing_health_care_education_cultural_services_and_other_social_services_excluding_social_security rdf:type owl:Class ;
+                                                                                                                                       rdfs:subClassOf :PUBLIC_ADMINISTRATION_AND_DEFENCE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Remediation_activities_and_other_waste_management_services
+:Remediation_activities_and_other_waste_management_services rdf:type owl:Class ;
+                                                            rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_and_installation_of_machinery_and_equipment
+:Repair_and_installation_of_machinery_and_equipment rdf:type owl:Class ;
+                                                    rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_and_maintenance_of_aircraft_and_spacecraft
+:Repair_and_maintenance_of_aircraft_and_spacecraft rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_and_maintenance_of_other_transport_equipment
+:Repair_and_maintenance_of_other_transport_equipment rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_and_maintenance_of_ships_and_boats
+:Repair_and_maintenance_of_ships_and_boats rdf:type owl:Class ;
+                                           rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_computers_and_personal_and_household_goods
+:Repair_of_computers_and_personal_and_household_goods rdf:type owl:Class ;
+                                                      rdfs:subClassOf :OTHER_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_electrical_equipment
+:Repair_of_electrical_equipment rdf:type owl:Class ;
+                                rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_electronic_and_optical_equipment
+:Repair_of_electronic_and_optical_equipment rdf:type owl:Class ;
+                                            rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_fabricated_metal_products
+:Repair_of_fabricated_metal_products rdf:type owl:Class ;
+                                     rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_fabricated_metal_products_machinery_and_equipment
+:Repair_of_fabricated_metal_products_machinery_and_equipment rdf:type owl:Class ;
+                                                             rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_machinery
+:Repair_of_machinery rdf:type owl:Class ;
+                     rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Repair_of_other_equipment
+:Repair_of_other_equipment rdf:type owl:Class ;
+                           rdfs:subClassOf :Repair_and_installation_of_machinery_and_equipment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Research_and_experimental_development_on_biotechnology
+:Research_and_experimental_development_on_biotechnology rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Scientific_research_and_development .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Research_and_experimental_development_on_natural_sciences_and_engineering
+:Research_and_experimental_development_on_natural_sciences_and_engineering rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :Scientific_research_and_development .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Research_and_experimental_development_on_social_sciences_and_humanities
+:Research_and_experimental_development_on_social_sciences_and_humanities rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :Scientific_research_and_development .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Residential_care_activities
+:Residential_care_activities rdf:type owl:Class ;
+                             rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Resilience
+:Resilience rdf:type owl:Class ;
+            rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Rolling
+:Rolling rdf:type owl:Class ;
+         rdfs:subClassOf :Forming .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Roofing_activities
+:Roofing_activities rdf:type owl:Class ;
+                    rdfs:subClassOf :Other_construction_installation .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Rubbers
+:Rubbers rdf:type owl:Class ;
+         rdfs:subClassOf :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_agricultural_machinery_equipment_and_supplies
+:Sale_of_agricultural_machinery_equipment_and_supplies rdf:type owl:Class ;
+                                                       rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_chemical_products
+:Sale_of_chemical_products rdf:type owl:Class ;
+                           rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_computers_computer_peripheral_equipment_and_software
+:Sale_of_computers_computer_peripheral_equipment_and_software rdf:type owl:Class ;
+                                                              rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_electronic_and_telecommunications_equipment_and_parts
+:Sale_of_electronic_and_telecommunications_equipment_and_parts rdf:type owl:Class ;
+                                                               rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_information_and_communication_equipment
+:Sale_of_information_and_communication_equipment rdf:type owl:Class ;
+                                                 rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_machine_tools
+:Sale_of_machine_tools rdf:type owl:Class ;
+                       rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_metals_and_metal_ores
+:Sale_of_metals_and_metal_ores rdf:type owl:Class ;
+                               rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_mining_construction_and_civil_engineering_machinery
+:Sale_of_mining_construction_and_civil_engineering_machinery rdf:type owl:Class ;
+                                                             rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_other_machinery_equipment_and_supplies
+:Sale_of_other_machinery_equipment_and_supplies rdf:type owl:Class ;
+                                                rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_pharmaceutical_goods
+:Sale_of_pharmaceutical_goods rdf:type owl:Class ;
+                              rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sale_of_waste_and_scrap
+:Sale_of_waste_and_scrap rdf:type owl:Class ;
+                         rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Satellite_telecommunications_activities
+:Satellite_telecommunications_activities rdf:type owl:Class ;
+                                         rdfs:subClassOf :Telecommunications .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Scattering
+:Scattering rdf:type owl:Class ;
+            rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Scientific_research_and_development
+:Scientific_research_and_development rdf:type owl:Class ;
+                                     rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sea_and_coastal_freight_water_transport
+:Sea_and_coastal_freight_water_transport rdf:type owl:Class ;
+                                         rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sea_and_coastal_passenger_water_transport
+:Sea_and_coastal_passenger_water_transport rdf:type owl:Class ;
+                                           rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Secondary_education
+:Secondary_education rdf:type owl:Class ;
+                     rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Section_activity
+:Section_activity rdf:type owl:Class ;
+                  rdfs:subClassOf :Problem_owner .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Security_and_investigation_activities
+:Security_and_investigation_activities rdf:type owl:Class ;
+                                       rdfs:subClassOf :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Seebeck_coefficient
+:Seebeck_coefficient rdf:type owl:Class ;
+                     rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Services_to_buildings_and_landscape_activities
+:Services_to_buildings_and_landscape_activities rdf:type owl:Class ;
+                                                rdfs:subClassOf :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sewerage
+:Sewerage rdf:type owl:Class ;
+          rdfs:subClassOf :Water_collection_treatment_and_supply .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Shaping_and_processing_of_flat_glass
+:Shaping_and_processing_of_flat_glass rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manufacture_of_other_non-metallic_mineral_products .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Shear_modulus
+:Shear_modulus rdf:type owl:Class ;
+               rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Shear_strength
+:Shear_strength rdf:type owl:Class ;
+                rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Si-based
+:Si-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Silicide
+:Silicide rdf:type owl:Class ;
+          rdfs:subClassOf :ceramic .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sintering
+:Sintering rdf:type owl:Class ;
+           rdfs:subClassOf :Primary_shaping .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Site_preparation
+:Site_preparation rdf:type owl:Class ;
+                  rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Social_work_activities_without_accommodation
+:Social_work_activities_without_accommodation rdf:type owl:Class ;
+                                              rdfs:subClassOf :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Software_access
+:Software_access rdf:type owl:Class ;
+                 rdfs:subClassOf :Capabilities ;
+                 rdfs:comment "Needs to be populated with list of software from George." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Software_publishing
+:Software_publishing rdf:type owl:Class ;
+                     rdfs:subClassOf :Publishing_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Soldering
+:Soldering rdf:type owl:Class ;
+           rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Solid
+:Solid rdf:type owl:Class ;
+       rdfs:subClassOf :Material .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sound_recording_and_music_publishing_activities
+:Sound_recording_and_music_publishing_activities rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Motion_picture_video_and_television_programme_production_sound_recording_and_music_publishing_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Space_transport
+:Space_transport rdf:type owl:Class ;
+                 rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specialised_construction_activities
+:Specialised_construction_activities rdf:type owl:Class ;
+                                     rdfs:subClassOf :CONSTRUCTION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specialised_design_activities
+:Specialised_design_activities rdf:type owl:Class ;
+                               rdfs:subClassOf :Other_professional_scientific_and_technical_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_activity
+:Specific_activity rdf:type owl:Class ;
+                   rdfs:subClassOf :Nuclear_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_heat
+:Specific_heat rdf:type owl:Class ;
+               rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_heat_capacity
+:Specific_heat_capacity rdf:type owl:Class ;
+                        rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_internal_surface_area
+:Specific_internal_surface_area rdf:type owl:Class ;
+                                rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_modulus
+:Specific_modulus rdf:type owl:Class ;
+                  rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_strength
+:Specific_strength rdf:type owl:Class ;
+                   rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Specific_weight
+:Specific_weight rdf:type owl:Class ;
+                 rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Spin_Hall_effect
+:Spin_Hall_effect rdf:type owl:Class ;
+                  rdfs:subClassOf :Magnetic_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sports_activities_and_amusement_and_recreation_activities
+:Sports_activities_and_amusement_and_recreation_activities rdf:type owl:Class ;
+                                                           rdfs:subClassOf :ARTS_ENTERTAINMENT_AND_RECREATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Sports_and_recreation_education
+:Sports_and_recreation_education rdf:type owl:Class ;
+                                 rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Stamping
+:Stamping rdf:type owl:Class ;
+          rdfs:subClassOf :Machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Steam_and_air_conditioning_supply
+:Steam_and_air_conditioning_supply rdf:type owl:Class ;
+                                   rdfs:subClassOf :ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Stiffness
+:Stiffness rdf:type owl:Class ;
+           rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Striking_of_coins
+:Striking_of_coins rdf:type owl:Class ;
+                   rdfs:subClassOf :Other_manufacturing .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Support_activities_for_other_mining_and_quarrying
+:Support_activities_for_other_mining_and_quarrying rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Mining_support_service_activities ;
+                                                   owl:disjointWith :Support_activities_for_petroleum_and_natural_gas_extraction .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Support_activities_for_petroleum_and_natural_gas_extraction
+:Support_activities_for_petroleum_and_natural_gas_extraction rdf:type owl:Class ;
+                                                             rdfs:subClassOf :Mining_support_service_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Surface_energy
+:Surface_energy rdf:type owl:Class ;
+                rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Surface_roughness
+:Surface_roughness rdf:type owl:Class ;
+                   rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Surface_tension
+:Surface_tension rdf:type owl:Class ;
+                 rdfs:subClassOf :Chemical_properties ,
+                                 :Properties_of_liquids_and_slurries .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#TRANSPORTATION_AND_STORAGE
+:TRANSPORTATION_AND_STORAGE rdf:type owl:Class ;
+                            rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Technical_testing_and_analysis
+:Technical_testing_and_analysis rdf:type owl:Class ;
+                                rdfs:subClassOf :Engineering_activities_and_related_technical_consultancy .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Telecommunications
+:Telecommunications rdf:type owl:Class ;
+                    rdfs:subClassOf :Programming_and_broadcasting_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Tensile_strength
+:Tensile_strength rdf:type owl:Class ;
+                  rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Tertiary_education
+:Tertiary_education rdf:type owl:Class ;
+                    rdfs:subClassOf :EDUCATION .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Test_drilling_and_boring
+:Test_drilling_and_boring rdf:type owl:Class ;
+                          rdfs:subClassOf :Specialised_construction_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermal_conductivity
+:Thermal_conductivity rdf:type owl:Class ;
+                      rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermal_diffusivity
+:Thermal_diffusivity rdf:type owl:Class ;
+                     rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermal_expansion
+:Thermal_expansion rdf:type owl:Class ;
+                   rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermal_properties
+:Thermal_properties rdf:type owl:Class ;
+                    rdfs:subClassOf :Material_property .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermal_treatment
+:Thermal_treatment rdf:type owl:Class ;
+                   rdfs:subClassOf :Manufacturing_Process .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermochemical_treatment
+:Thermochemical_treatment rdf:type owl:Class ;
+                          rdfs:subClassOf :Thermal_treatment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermodynamic_models
+:Thermodynamic_models rdf:type owl:Class ;
+                      rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermodynamical_treatment
+:Thermodynamical_treatment rdf:type owl:Class ;
+                           rdfs:subClassOf :Thermal_treatment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermomechanical_equilibrium
+:Thermomechanical_equilibrium rdf:type owl:Class ;
+                              rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thermomechanical_treatment
+:Thermomechanical_treatment rdf:type owl:Class ;
+                            rdfs:subClassOf :Thermal_treatment .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thick_film_coating
+:Thick_film_coating rdf:type owl:Class ;
+                    rdfs:subClassOf :Coating ;
+                    owl:disjointWith :Thin_film_coating .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Thin_film_coating
+:Thin_film_coating rdf:type owl:Class ;
+                   rdfs:subClassOf :Coating .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Ti-based
+:Ti-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Toughness
+:Toughness rdf:type owl:Class ;
+           rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Trade_of_electricity
+:Trade_of_electricity rdf:type owl:Class ;
+                      rdfs:subClassOf :Electric_power_generation_transmission_and_distribution .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Trade_of_gas_through_mains
+:Trade_of_gas_through_mains rdf:type owl:Class ;
+                            rdfs:subClassOf :Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Translation_and_interpretation_activities
+:Translation_and_interpretation_activities rdf:type owl:Class ;
+                                           rdfs:subClassOf :Other_professional_scientific_and_technical_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Translator_type
+:Translator_type rdf:type owl:Class ;
+                 rdfs:subClassOf :Preferences .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Transmission_of_electricity
+:Transmission_of_electricity rdf:type owl:Class ;
+                             rdfs:subClassOf :Electric_power_generation_transmission_and_distribution .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Transmittance
+:Transmittance rdf:type owl:Class ;
+               rdfs:subClassOf :Optical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Transport_via_pipeline
+:Transport_via_pipeline rdf:type owl:Class ;
+                        rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Travel_agency_tour_operator_and_other_reservation_service_and_related_activities
+:Travel_agency_tour_operator_and_other_reservation_service_and_related_activities rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Treatment_and_coating_of_metals
+:Treatment_and_coating_of_metals rdf:type owl:Class ;
+                                 rdfs:subClassOf :Treatment_and_coating_of_metals_machining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Treatment_and_coating_of_metals_machining
+:Treatment_and_coating_of_metals_machining rdf:type owl:Class ;
+                                           rdfs:subClassOf :MANUFACTURING .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Treatment_and_disposal_of_hazardous_waste
+:Treatment_and_disposal_of_hazardous_waste rdf:type owl:Class ;
+                                           rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Treatment_and_disposal_of_non-hazardous_waste
+:Treatment_and_disposal_of_non-hazardous_waste rdf:type owl:Class ;
+                                               rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Triple_point
+:Triple_point rdf:type owl:Class ;
+              rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Type
+:Type rdf:type owl:Class ;
+      rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Vapor_pressure
+:Vapor_pressure rdf:type owl:Class ;
+                rdfs:subClassOf :Thermal_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Veterinary_activities
+:Veterinary_activities rdf:type owl:Class ;
+                       rdfs:subClassOf :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Viscoplasticity_models
+:Viscoplasticity_models rdf:type owl:Class ;
+                        rdfs:subClassOf :Continuum .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Viscosity
+:Viscosity rdf:type owl:Class ;
+           rdfs:subClassOf :Mechanical_properties ,
+                           :Properties_of_liquids_and_slurries .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#WATER_SUPPLY_SEWERAGE_WASTE_MANAGEMENT_AND_REMEDIATION_ACTIVITIES
+:WATER_SUPPLY_SEWERAGE_WASTE_MANAGEMENT_AND_REMEDIATION_ACTIVITIES rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#WHOLESALE_AND_RETAIL_TRADE
+:WHOLESALE_AND_RETAIL_TRADE rdf:type owl:Class ;
+                            rdfs:subClassOf :Industry_area .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Warehousing_and_support_activities_for_transportation
+:Warehousing_and_support_activities_for_transportation rdf:type owl:Class ;
+                                                       rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Waste_collection_treatment_and_disposal_activities_materials_recovery
+:Waste_collection_treatment_and_disposal_activities_materials_recovery rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :WATER_SUPPLY_SEWERAGE_WASTE_MANAGEMENT_AND_REMEDIATION_ACTIVITIES ;
+                                                                       owl:disjointWith :Water_collection_treatment_and_supply .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Waste_treatment_and_disposal
+:Waste_treatment_and_disposal rdf:type owl:Class ;
+                              rdfs:subClassOf :Waste_collection_treatment_and_disposal_activities_materials_recovery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Water_collection_treatment_and_supply
+:Water_collection_treatment_and_supply rdf:type owl:Class ;
+                                       rdfs:subClassOf :WATER_SUPPLY_SEWERAGE_WASTE_MANAGEMENT_AND_REMEDIATION_ACTIVITIES .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Water_transport
+:Water_transport rdf:type owl:Class ;
+                 rdfs:subClassOf :TRANSPORTATION_AND_STORAGE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Welding
+:Welding rdf:type owl:Class ;
+         rdfs:subClassOf :Joining .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Wholesale_and_retail_trade_and_repair_of_motor_vehicles_and_motorcycles
+:Wholesale_and_retail_trade_and_repair_of_motor_vehicles_and_motorcycles rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :WHOLESALE_AND_RETAIL_TRADE .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Wired_telecommunications_activities
+:Wired_telecommunications_activities rdf:type owl:Class ;
+                                     rdfs:subClassOf :Telecommunications .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Wireless_telecommunications_activities
+:Wireless_telecommunications_activities rdf:type owl:Class ;
+                                        rdfs:subClassOf :Telecommunications .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Yield_strength
+:Yield_strength rdf:type owl:Class ;
+                rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Youngs_modulus
+:Youngs_modulus rdf:type owl:Class ;
+                rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Zn-based
+:Zn-based rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#boiling_temperature
+:boiling_temperature rdf:type owl:Class ;
+                     rdfs:subClassOf :Properties_of_liquids_and_slurries .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#brittleness
+:brittleness rdf:type owl:Class ;
+             rdfs:subClassOf :Mechanical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#ceramic
+:ceramic rdf:type owl:Class ;
+         rdfs:subClassOf :Solid .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#model
+:model rdf:type owl:Class ;
+       rdfs:subClassOf :Modelling_experience .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#pH
+:pH rdf:type owl:Class ;
+    rdfs:subClassOf :Chemical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Data_processing_hosting_and_related_activities;_web_portals
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Data_processing_hosting_and_related_activities;_web_portals> rdf:type owl:Class ;
+                                                                                                                                     rdfs:subClassOf :Computer_programming_consultancy_and_related_activities .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bodies_(coachwork)_for_motor_vehicles;_manufacture_of_trailers_and_semi-trailers
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bodies_(coachwork)_for_motor_vehicles;_manufacture_of_trailers_and_semi-trailers> rdf:type owl:Class ;
+                                                                                                                                                                         rdfs:subClassOf :Manufacture_of_motor_vehicles_trailers_and_semi-trailers .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_instruments_and_appliances_for_measuring_testing_and_navigation;_watches_and_clocks
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_instruments_and_appliances_for_measuring_testing_and_navigation;_watches_and_clocks> rdf:type owl:Class ;
+                                                                                                                                                                            rdfs:subClassOf :Manufacture_of_electronic_components_and_boards .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_office_machinery_and_equipment_(except_computers_and_peripheral_equipment)
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_office_machinery_and_equipment_(except_computers_and_peripheral_equipment)> rdf:type owl:Class ;
+                                                                                                                                                                   rdfs:subClassOf :Manufacture_of_other_general-purpose_machinery .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Metals/alloys> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :Crystal .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Nernst_coefficient_(thermoelectric_effect)
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Nernst_coefficient_(thermoelectric_effect)> rdf:type owl:Class ;
+                                                                                                                    rdfs:subClassOf :Electrical_properties .
+
+
+###  http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#polymers/plastics
+<http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#polymers/plastics> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :Solid .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ACCOMMODATION_AND_FOOD_SERVICE_ACTIVITIES
+                :ADMINISTRATIVE_AND_SUPPORT_SERVICE_ACTIVITIES
+                :AGRICULTURE_FORESTRY_AND_FISHING
+                :ARTS_ENTERTAINMENT_AND_RECREATION
+                :CONSTRUCTION
+                :EDUCATION
+                :ELECTRICITY_GAS_STEAM_AND_AIR_CONDITIONING_SUPPLY
+                :FINANCIAL_AND_INSURANCE_ACTIVITIES
+                :HUMAN_HEALTH_AND_SOCIAL_WORK_ACTIVITIES
+                :INFORMATION_AND_COMMUNICATION
+                :MANUFACTURING
+                :MINING_AND_QUARRYING
+                :OTHER_SERVICE_ACTIVITIES
+                :PROFESSIONAL_SCIENTIFIC_AND_TECHNICAL_ACTIVITIES
+                :PUBLIC_ADMINISTRATION_AND_DEFENCE
+                :REAL_ESTATE_ACTIVITIES
+                :TRANSPORTATION_AND_STORAGE
+                :WATER_SUPPLY_SEWERAGE_WASTE_MANAGEMENT_AND_REMEDIATION_ACTIVITIES
+                :WHOLESALE_AND_RETAIL_TRADE
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Absorbance
+                :Birefringence
+                :Colour
+                :Electro-optic_effect
+                :Luminosity
+                :Optical_activity
+                :Photoelasticity
+                :Photosensitivity
+                :Reflectivity
+                :Refractive_index
+                :Scattering
+                :Transmittance
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Activities_auxiliary_to_financial_services_and_insurance_activities
+                :Financial_service_activities_except_insurance_and_pension_funding
+                :Insurance_reinsurance_and_pension_funding_except_compulsory_social_security
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Activities_of_head_offices_management_consultancy_activities
+                :Architectural_and_engineering_activities_technical_testing_and_analysis
+                :Engineering_activities_and_related_technical_consultancy
+                :Legal_and_accounting_activities
+                :Other_professional_scientific_and_technical_activities
+                :Scientific_research_and_development
+                :Veterinary_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Activities_of_membership_organisations
+                :Other_personal_service_activities
+                :Repair_of_computers_and_personal_and_household_goods
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AdditiveManufacturing
+                :Casting
+                :CrystalGrowth
+                :Polymerization
+                :Sintering
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Advertising_and_market_research
+                :Other_research_and_experimental_development_on_natural_sciences_and_engineering
+                :Research_and_experimental_development_on_biotechnology
+                :Research_and_experimental_development_on_natural_sciences_and_engineering
+                :Research_and_experimental_development_on_social_sciences_and_humanities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Air_transport
+                :Freight_air_transport
+                :Freight_rail_transport
+                :Freight_transport_by_road_and_removal_services
+                :Inland_freight_water_transport
+                :Inland_passenger_water_transport
+                :Land_transport_and_transport_via_pipelines
+                :Other_passenger_land_transport_
+                :Other_postal_and_courier_activities
+                :Other_transportation_support_activities_
+                :Passenger_air_transport
+                :Passenger_rail_transport_interurban
+                :Postal_activities_under_universal_service_obligation
+                :Postal_and_courier_activities
+                :Sea_and_coastal_freight_water_transport
+                :Sea_and_coastal_passenger_water_transport
+                :Space_transport
+                :Transport_via_pipeline
+                :Warehousing_and_support_activities_for_transportation
+                :Water_transport
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Al-based
+                :Cu-based
+                :Fe-based
+                :Mg-based
+                :Mn-based
+                :Ni-based
+                :Si-based
+                :Ti-based
+                :Zn-based
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aluminium_production
+                :Casting_of_iron
+                :Casting_of_light_metals
+                :Casting_of_metals
+                :Casting_of_other_non-ferrous_metals
+                :Casting_of_steel
+                :Cold_drawing_of_bars
+                :Cold_drawing_of_wire
+                :Cold_forming_or_folding
+                :Cold_rolling_of_narrow_strip
+                :Copper_production
+                :Lead_zinc_and_tin_production
+                :Manufacture_of_basic_iron_and_steel_and_of_ferro-alloys
+                :Manufacture_of_basic_precious_and_other_non-ferrous_metals
+                :Manufacture_of_other_products_of_first_processing_of_steel
+                :Manufacture_of_tubes_pipes_hollow_profiles_and_related_fittings_of_steel
+                :Other_non-ferrous_metal_production
+                :Precious_metals_production
+                :Processing_of_nuclear_fuel_
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Amorph
+                :Composites
+                :Crystal
+                :Rubbers
+                :ceramic
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#polymers/plastics>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Atomic_mass
+                :Atomic_number
+                :Atomic_weight
+                :Half_life
+                :Neutron_cross-section
+                :Specific_activity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Atomistic
+                :Continuum
+                :Electronic
+                :Mesoscopic
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Boiling_point
+                :Coefficient_of_thermal_expansion
+                :Critical_temperature
+                :Curie_point
+                :Emissivity
+                :Eutectic_point
+                :Flammability
+                :Flash_point
+                :Glass_transition_temperature
+                :Heat_of_vaporization
+                :Inversion_temperature
+                :Melting_point
+                :Specific_heat
+                :Specific_heat_capacity
+                :Thermal_conductivity
+                :Thermal_diffusivity
+                :Thermal_expansion
+                :Triple_point
+                :Vapor_pressure
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Boride
+                :Carbide
+                :Ceramic_for_high_temperature_applications
+                :Functional_ceramic
+                :Nitride
+                :Others
+                :Oxide
+                :Silicide
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Brazing
+                :Gluing
+                :Soldering
+                :Welding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Building_completion_and_finishing
+                :Floor_and_wall_covering
+                :Joinery_installation
+                :Other_building_completion_and_finishing
+                :Other_specialised_construction_activities
+                :Other_specialised_construction_activities_nec
+                :Painting_and_glazing
+                :Plastering
+                :Roofing_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Building_of_ships_and_boats
+                :Installation_of_industrial_machinery_and_equipment
+                :Manufacture_of_basic_metals
+                :Manufacture_of_coke_and_refined_petroleum_products
+                :Manufacture_of_computer_electronic_and_optical_products
+                :Manufacture_of_fabricated_metal_products_except_machinery_and_equipment
+                :Manufacture_of_food_tobacco_and_beverages
+                :Manufacture_of_furniture
+                :Manufacture_of_machinery_and_equipment_nec
+                :Manufacture_of_machinery_for_mining_quarrying_and_construction
+                :Manufacture_of_metal_forming_machinery_and_machine_tools
+                :Manufacture_of_motor_vehicles_trailers_and_semi-trailers
+                :Manufacture_of_other_non-metallic_mineral_products
+                :Manufacture_of_other_transport_equipment
+                :Manufacture_of_textiles_wood_paper
+                :Other_manufacturing
+                :Printing_and_reproduction_of_recorded_media
+                :Repair_and_installation_of_machinery_and_equipment
+                :Treatment_and_coating_of_metals_machining
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bulk_modulus
+                :Coefficient_of_restitution
+                :Compressive_strength
+                :Creep
+                :Ductility
+                :Durability
+                :Elasticity
+                :Fatigue_limit
+                :Flexibility
+                :Flexural_modulus
+                :Flexural_strength
+                :Fracture_toughness
+                :Friction_coefficient
+                :Hardness
+                :Malleability
+                :Mass_diffusivity
+                :Plasticity
+                :Poissons_ratio
+                :Resilience
+                :Shear_modulus
+                :Shear_strength
+                :Specific_modulus
+                :Specific_strength
+                :Specific_weight
+                :Stiffness
+                :Surface_roughness
+                :Tensile_strength
+                :Toughness
+                :Viscosity
+                :Yield_strength
+                :Youngs_modulus
+                :brittleness
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Capabilities
+                :Industry_area
+                :Preferences
+                :Product
+                :Section_activity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Capacitance
+                :Dielectric_constant
+                :Dielectric_strength
+                :Electric_susceptibility
+                :Electrical_resistivity_and_conductivity
+                :Electrocaloric_coefficient
+                :Electrostriction
+                :Magnetoelectric_Polarizability
+                :Permittivity
+                :Piezoelectric_constants
+                :Pyroelectricity
+                :Seebeck_coefficient
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Nernst_coefficient_(thermoelectric_effect)>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Chemical_properties
+                :Electrical_properties
+                :Magnetic_properties
+                :Mechanical_properties
+                :Nuclear_properties
+                :Optical_properties
+                :Properties_of_liquids_and_slurries
+                :Thermal_properties
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Civil_engineering
+                :Construction_of_residential_and_non-residential_buildings
+                :Development_of_building_projects
+                :Other_construction_installation
+                :Specialised_construction_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cloud_computing
+                :NDA_type
+                :Translator_type
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Coating
+                :Forming
+                :Joining
+                :Machining
+                :Primary_shaping
+                :Thermal_treatment
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Collection_of_hazardous_waste
+                :Collection_of_non-hazardous_waste
+                :Dismantling_of_wrecks
+                :Materials_recovery
+                :Recovery_of_sorted_materials
+                :Remediation_activities_and_other_waste_management_services
+                :Treatment_and_disposal_of_hazardous_waste
+                :Treatment_and_disposal_of_non-hazardous_waste
+                :Waste_treatment_and_disposal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Compulsory_social_security_activities
+                :Defence_activities
+                :Fire_service_activities
+                :Foreign_affairs
+                :General_public_administration_activities
+                :Justice_and_judicial_activities
+                :Provision_of_services_to_the_community_as_a_whole
+                :Public_order_and_safety_activities
+                :Regulation_of_and_contribution_to_more_efficient_operation_of_businesses
+                :Regulation_of_the_activities_of_providing_health_care_education_cultural_services_and_other_social_services_excluding_social_security
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Computer_programming_consultancy_and_related_activities
+                :Information_service_activities
+                :Other_information_service_activities
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Data_processing_hosting_and_related_activities;_web_portals>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Construction_of_bridges_and_tunnels
+                :Construction_of_other_civil_engineering_projects
+                :Construction_of_other_civil_engineering_projects_nec
+                :Construction_of_railways_and_underground_railways
+                :Construction_of_roads_and_motorways
+                :Construction_of_roads_and_railways
+                :Construction_of_utility_projects
+                :Construction_of_utility_projects_for_electricity_and_telecommunications
+                :Construction_of_utility_projects_for_fluids
+                :Construction_of_water_projects
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Consultancy
+                :Manufacturing
+                :Materials_characterisation
+                :Materials_end_user
+                :Materials_supplier
+                :Other
+                :Product_design
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Continuum_damage_mechanics
+                :Electromagnetic_models
+                :Electromagnetic_radiation
+                :Fluid_flow
+                :Multiphase-fluid-flow
+                :Phase-field-crystal
+                :Phase-field_multi
+                :Reaction-diffusion_equation
+                :Thermodynamic_models
+                :Thermomechanical_equilibrium
+                :Viscoplasticity_models
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Corrosion_resistance
+                :Hygroscopy
+                :Reactivity
+                :Specific_internal_surface_area
+                :Surface_energy
+                :Surface_tension
+                :pH
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Creative_arts_and_entertainment_activities
+                :Gambling_and_betting_activities
+                :Libraries_archives_museums_and_other_cultural_activities
+                :Sports_activities_and_amusement_and_recreation_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Crop_and_animal_production_hunting_and_related_service_activities
+                :Fishing_and_aquaculture
+                :Forestry_and_logging
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Curie_temperature
+                :Diamagnetism
+                :Hall_coefficient
+                :Hysteresis
+                :Magnetocaloric_coefficient
+                :Magnetoresistance
+                :Magnetostriction
+                :Magnetothermoelectric_power
+                :Permeability
+                :Piezomagnetism
+                :Pyromagnetic_coefficient
+                :Spin_Hall_effect
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cutting
+                :Drilling
+                :Stamping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cutting_shaping_and_finishing_of_stone
+                :Manufacture_and_processing_of_other_glass_including_technical_glassware
+                :Manufacture_of_abrasive_products_and_non-metallic_mineral_products_nec
+                :Manufacture_of_articles_of_concrete_cement_and_plaster
+                :Manufacture_of_bricks_tiles_and_construction_products_in_baked_clay
+                :Manufacture_of_cement
+                :Manufacture_of_cement_lime_and_plaster
+                :Manufacture_of_ceramic_household_and_ornamental_articles
+                :Manufacture_of_ceramic_insulators_and_insulating_fittings
+                :Manufacture_of_ceramic_sanitary_fixtures
+                :Manufacture_of_ceramic_tiles_and_flags
+                :Manufacture_of_clay_building_materials
+                :Manufacture_of_concrete_products_for_construction_purposes
+                :Manufacture_of_fibre_cement
+                :Manufacture_of_flat_glass
+                :Manufacture_of_glass_and_glass_products
+                :Manufacture_of_glass_fibres
+                :Manufacture_of_hollow_glass
+                :Manufacture_of_lime_and_plaster
+                :Manufacture_of_mortars
+                :Manufacture_of_other_articles_of_concrete_plaster_and_cement
+                :Manufacture_of_other_ceramic_products
+                :Manufacture_of_other_non-metallic_mineral_products_nec
+                :Manufacture_of_other_porcelain_and_ceramic_products
+                :Manufacture_of_other_technical_ceramic_products
+                :Manufacture_of_plaster_products_for_construction_purposes
+                :Manufacture_of_ready-mixed_concrete
+                :Manufacture_of_refractory_products
+                :Production_of_abrasive_products
+                :Shaping_and_processing_of_flat_glass
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Demolition
+                :Demolition_and_site_preparation
+                :Electrical_installation
+                :Electrical_plumbing_and_other_construction_installation_activities
+                :Plumbing_heat_and_air-conditioning_installation
+                :Site_preparation
+                :Test_drilling_and_boring
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Distribution_of_electricity
+                :Production_of_electricity
+                :Trade_of_electricity
+                :Transmission_of_electricity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Distribution_of_gaseous_fuels_through_mains
+                :Manufacture_of_gas
+                :Trade_of_gas_through_mains
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Electric_power_generation_transmission_and_distribution
+                :Manufacture_of_gas_distribution_of_gaseous_fuels_through_mains
+                :Steam_and_air_conditioning_supply
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Employment_activities
+                :Office_administrative_office_support_and_other_business_support_activities
+                :Security_and_investigation_activities
+                :Services_to_buildings_and_landscape_activities
+                :Travel_agency_tour_operator_and_other_reservation_service_and_related_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Extraction_of_crude_petroleum_and_natural_gas
+                :Mining_of_chemical_and_fertiliser_minerals
+                :Mining_of_coal_and_lignite
+                :Mining_of_metal_ores
+                :Mining_support_service_activities
+                :Other_mining_and_quarrying
+                :Other_mining_and_quarrying_nec
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Forging_pressing_stamping_and_roll-forming_of_metal_powder_metallurgy
+                :Manufacture_of_central_heating_radiators_and_boilers
+                :Manufacture_of_doors_and_windows_of_metal
+                :Manufacture_of_metal_structures_and_parts_of_structures
+                :Manufacture_of_other_tanks_reservoirs_and_containers_of_metal
+                :Manufacture_of_steam_generators_except_central_heating_hot_water_boilers
+                :Manufacture_of_structural_metal_products
+                :Manufacture_of_tanks_reservoirs_and_containers_of_metal
+                :Manufacture_of_weapons_and_ammunition
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Heat_treatment
+                :Thermochemical_treatment
+                :Thermodynamical_treatment
+                :Thermomechanical_treatment
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Higher_education
+                :Other_education
+                :Post-secondary_non-tertiary_education
+                :Pre-primary_education
+                :Primary_education
+                :Secondary_education
+                :Sports_and_recreation_education
+                :Tertiary_education
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Hospital_activities
+                :Human_health_activities
+                :Medical_and_dental_practice_activities
+                :Other_human_health_activities
+                :Residential_care_activities
+                :Social_work_activities_without_accommodation
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Machining
+                :Manufacture_of_cutlery
+                :Manufacture_of_cutlery_tools_and_general_hardware
+                :Manufacture_of_fasteners_and_screw_machine_products
+                :Manufacture_of_light_metal_packaging_
+                :Manufacture_of_locks_and_hinges
+                :Manufacture_of_other_fabricated_metal_products
+                :Manufacture_of_other_fabricated_metal_products_nec
+                :Manufacture_of_steel_drums_and_similar_containers
+                :Manufacture_of_tools
+                :Manufacture_of_wire_products_chain_and_springs
+                :Treatment_and_coating_of_metals
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_agricultural_and_forestry_machinery
+                :Manufacture_of_lifting_and_handling_equipment
+                :Manufacture_of_non-domestic_cooling_and_ventilation_equipment
+                :Manufacture_of_other_general-purpose_machinery_nec
+                :Manufacture_of_ovens_furnaces_and_furnace_burners
+                :Manufacture_of_power-driven_hand_tools
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_office_machinery_and_equipment_(except_computers_and_peripheral_equipment)>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_air_and_spacecraft_and_related_machinery
+                :Manufacture_of_bicycles_and_invalid_carriages
+                :Manufacture_of_military_fighting_vehicles
+                :Manufacture_of_motorcycles
+                :Manufacture_of_other_transport_equipment_nec
+                :Manufacture_of_railway_locomotives_and_rolling_stock
+                :Manufacture_of_transport_equipment_nec
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_basic_chemicals_fertilisers_and_nitrogen_compounds_plastics_and_synthetic_rubber_in_primary_forms
+                :Manufacture_of_basic_pharmaceutical_products
+                :Manufacture_of_basic_pharmaceutical_products_and_pharmaceutical_preparations
+                :Manufacture_of_builders_ware_of_plastic
+                :Manufacture_of_chemicals_and_chemical_products
+                :Manufacture_of_coke_oven_products
+                :Manufacture_of_dyes_and_pigments
+                :Manufacture_of_essential_oils
+                :Manufacture_of_explosives
+                :Manufacture_of_fertilisers_and_nitrogen_compounds
+                :Manufacture_of_glues
+                :Manufacture_of_industrial_gases
+                :Manufacture_of_man-made_fibres
+                :Manufacture_of_other_chemical_products
+                :Manufacture_of_other_chemical_products_nec
+                :Manufacture_of_other_inorganic_basic_chemicals
+                :Manufacture_of_other_organic_basic_chemicals
+                :Manufacture_of_other_plastic_products
+                :Manufacture_of_other_rubber_products
+                :Manufacture_of_paints_varnishes_and_similar_coatings_printing_ink_and_mastics
+                :Manufacture_of_perfumes_and_toilet_preparations
+                :Manufacture_of_pesticides_and_other_agrochemical_products
+                :Manufacture_of_pharmaceutical_preparations
+                :Manufacture_of_plastic_packing_goods
+                :Manufacture_of_plastic_plates_sheets_tubes_and_profiles
+                :Manufacture_of_plastic_products
+                :Manufacture_of_plastics_in_primary_forms
+                :Manufacture_of_refined_petroleum_products
+                :Manufacture_of_rubber_and_plastic_products
+                :Manufacture_of_rubber_products
+                :Manufacture_of_rubber_tyres_and_tubes
+                :Manufacture_of_soap_and_detergents_cleaning_and_polishing_preparations_perfumes_and_toilet_preparations
+                :Manufacture_of_synthetic_rubber_in_primary_forms
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_batteries_and_accumulators
+                :Manufacture_of_domestic_appliances
+                :Manufacture_of_electric_domestic_appliances
+                :Manufacture_of_electric_lighting_equipment
+                :Manufacture_of_electric_motors_generators_and_transformers
+                :Manufacture_of_electric_motors_generators_transformers_and_electricity_distribution_and_control_apparatus
+                :Manufacture_of_electricity_distribution_and_control_apparatus
+                :Manufacture_of_fibre_optic_cables
+                :Manufacture_of_non-electric_domestic_appliances
+                :Manufacture_of_other_electrical_equipment
+                :Manufacture_of_other_electronic_and_electric_wires_and_cables
+                :Manufacture_of_wiring_and_wiring_devices
+                :Manufacture_of_wiring_devices
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_bearings_gears_gearing_and_driving_elements
+                :Manufacture_of_engines_and_turbines_except_aircraft_vehicle_and_cycle_engines
+                :Manufacture_of_fluid_power_equipment
+                :Manufacture_of_other_pumps_and_compressors
+                :Manufacture_of_other_taps_and_valves
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_beverages
+                :Manufacture_of_food_products
+                :Manufacture_of_tobacco_products
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_brooms_and_brushes
+                :Manufacture_of_games_and_toys
+                :Manufacture_of_jewellery_and_related_articles
+                :Manufacture_of_medical_and_dental_instruments_and_supplies
+                :Manufacture_of_musical_instruments
+                :Manufacture_of_sports_goods
+                :Manufacturing_nec
+                :Other_manufacturing_nec_
+                :Striking_of_coins
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_communication_equipment
+                :Manufacture_of_computers_and_peripheral_equipment
+                :Manufacture_of_consumer_electronics
+                :Manufacture_of_electronic_components
+                :Manufacture_of_irradiation_electromedical_and_electrotherapeutic_equipment
+                :Manufacture_of_loaded_electronic_boards
+                :Manufacture_of_magnetic_and_optical_media
+                :Manufacture_of_optical_instruments_and_photographic_equipment
+                :Manufacture_of_watches_and_clocks
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_instruments_and_appliances_for_measuring_testing_and_navigation;_watches_and_clocks>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_electrical_and_electronic_equipment_for_motor_vehicles
+                :Manufacture_of_motor_vehicles
+                :Manufacture_of_other_parts_and_accessories_for_motor_vehicles
+                :Manufacture_of_parts_and_accessories_for_motor_vehicles
+                <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-10#Manufacture_of_bodies_(coachwork)_for_motor_vehicles;_manufacture_of_trailers_and_semi-trailers>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_leather_and_related_products
+                :Manufacture_of_paper_and_paper_products
+                :Manufacture_of_textiles
+                :Manufacture_of_wearing_apparel
+                :Manufacture_of_wood_and_of_products_of_wood_and_cork_except_furniture
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_machinery_for_food_beverage_and_tobacco_processing
+                :Manufacture_of_machinery_for_paper_and_paperboard_production
+                :Manufacture_of_machinery_for_textile_apparel_and_leather_production
+                :Manufacture_of_other_special-purpose_machinery_nec
+                :Manufacture_of_plastics_and_rubber_machinery
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Manufacture_of_machinery_for_metallurgy
+                :Manufacture_of_metal_forming_machinery
+                :Manufacture_of_other_machine_tools
+                :Manufacture_of_other_special-purpose_machinery
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Mining_and_quarrying_nec
+                :Mining_of_clays_and_kaolin
+                :Quarrying_of_stone_sand_and_clay
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Mining_of_iron_ores
+                :Mining_of_non-ferrous_metal_ores
+                :Mining_of_other_non-ferrous_metal_ores
+                :Mining_of_uranium_and_thorium_ores
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Motion_picture_video_and_television_programme_production_sound_recording_and_music_publishing_activities
+                :Programming_and_broadcasting_activities
+                :Publishing_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Other_professional_scientific_and_technical_activities_nec
+                :Photographic_activities
+                :Specialised_design_activities
+                :Translation_and_interpretation_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Other_telecommunications_activities
+                :Satellite_telecommunications_activities
+                :Wired_telecommunications_activities
+                :Wireless_telecommunications_activities
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Repair_and_maintenance_of_aircraft_and_spacecraft
+                :Repair_and_maintenance_of_other_transport_equipment
+                :Repair_and_maintenance_of_ships_and_boats
+                :Repair_of_electrical_equipment
+                :Repair_of_electronic_and_optical_equipment
+                :Repair_of_fabricated_metal_products
+                :Repair_of_fabricated_metal_products_machinery_and_equipment
+                :Repair_of_machinery
+                :Repair_of_other_equipment
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Sale_of_agricultural_machinery_equipment_and_supplies
+                :Sale_of_chemical_products
+                :Sale_of_computers_computer_peripheral_equipment_and_software
+                :Sale_of_electronic_and_telecommunications_equipment_and_parts
+                :Sale_of_information_and_communication_equipment
+                :Sale_of_machine_tools
+                :Sale_of_metals_and_metal_ores
+                :Sale_of_mining_construction_and_civil_engineering_machinery
+                :Sale_of_other_machinery_equipment_and_supplies
+                :Sale_of_pharmaceutical_goods
+                :Sale_of_waste_and_scrap
+                :Wholesale_and_retail_trade_and_repair_of_motor_vehicles_and_motorcycles
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Surface_tension
+                :Viscosity
+                :boiling_temperature
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
